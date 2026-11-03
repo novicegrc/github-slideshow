@@ -1,16 +1,14 @@
-<script src="{{ site.baseurl }}/node_modules/reveal.js/js/reveal.js"></script>
+<script src="{{ site.baseurl }}/node_modules/reveal.js/dist/reveal.js"></script>
+<script src="{{ site.baseurl }}/node_modules/reveal.js/plugin/markdown/markdown.js"></script>
+<script src="{{ site.baseurl }}/node_modules/reveal.js/plugin/highlight/highlight.js"></script>
+<script src="{{ site.baseurl }}/node_modules/reveal.js/plugin/notes/notes.js"></script>
 
 		<script>
-			// More info about config & dependencies:
-			// - https://github.com/hakimel/reveal.js#configuration
-			// - https://github.com/hakimel/reveal.js#dependencies
+			// More info about config & plugins:
+			// - https://revealjs.com/config/
+			// - https://revealjs.com/plugins/
 			Reveal.initialize({
 				hash: true,
-				dependencies: [
-					{ src: 'node_modules/reveal.js/plugin/markdown/marked.js' },
-					{ src: 'node_modules/reveal.js/plugin/markdown/markdown.js' },
-					{ src: 'node_modules/reveal.js/plugin/highlight/highlight.js' },
-					{ src: 'node_modules/reveal.js/plugin/notes/notes.js', async: true }
-				]
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
 		</script>
